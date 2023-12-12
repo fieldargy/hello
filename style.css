@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image:linear-gradient(rgba(32, 28, 28, 0.75),rgba(0, 0, 0, 0.75)), url('Images/44.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: none;
+}
+#logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.banner{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left:50px;
+    position: relative;
+}
+li a{
+    
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.banner ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: cadetblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.banner ul li :hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+    
+}
+.content h1{
+    font-size: 100px;
+    margin-bottom: 20px;
+    
+}
+#button2{
+    border-radius: 50px;
+    text-align: center;
+    background: transparent;
+    border-color: aqua;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left:-160px;
+    position: absolute;
+    color: aliceblue;
+    overflow: hidden;
+    
+}
+#button1{
+    border-radius: 25px;
+    text-align: center;
+    background: transparent;
+    border-color: aqua;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 20px;
+    color: aliceblue;
+    overflow: hidden;
+    
+}
+.sp{
+    width: 0;
+    height: 100%;
+    background: cyan;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+    
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
